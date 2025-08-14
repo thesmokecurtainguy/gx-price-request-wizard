@@ -1,3 +1,5 @@
+export const runtime = 'nodejs';
+
 import { NextRequest, NextResponse } from 'next/server';
 import { PayloadSchema, renderHtmlEmail } from '../../../lib/template';
 import { getTransport } from '../../../lib/email';
