@@ -17,4 +17,3 @@ Vercel → add env vars from `.env.example`
 ## Sizing Table CSV
 Columns (inches): `min_clear_width,max_clear_width,min_frame_width,max_frame_width,min_frame_projection,max_frame_projection,mount_type,gx_model,notes`
 Mount type: `stub-rails` or `aux-rails`.
- 
