@@ -1,8 +1,8 @@
 'use client';
 import React from 'react';
 import { useState } from 'react';
-import Progress from '@/components/Progress';
-import BrandHeader from '@/components/Brand';
+import Progress from '../components/Progress';
+import BrandHeader from '../components/Brand';
 
 function parseInches(input: string): number | null {
   if (!input) return null;
