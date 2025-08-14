@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { PayloadSchema, renderHtmlEmail } from '@/lib/template';
-import { getTransport } from '@/lib/email';
+import { PayloadSchema, renderHtmlEmail } from '../../../lib/template';
+import { getTransport } from '../../../lib/email';
 
 export async function POST(req: NextRequest) {
   try {
