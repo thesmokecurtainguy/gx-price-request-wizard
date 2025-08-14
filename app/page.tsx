@@ -9,14 +9,14 @@ function parseInches(input: string): number | null {
   const s = input.trim();
   const simple = /^\d+(?:\.\d+)?$/;
   if (simple.test(s)) return Number(s);
-  const frac = /^(\d+)-(\d+)\/(\d+)$/; // 2-7/8
+  const frac = /^(\d+)-(\d+)\/(\d+)$/; // 2-7/8  <-- note the slash
   const m = s.match(frac);
   if (m) {
     const whole = Number(m[1]);
     const num = Number(m[2]);
     const den = Number(m[3]);
     if (den === 0) return null;
-    return whole + num/den;
+    return whole + num / den;
   }
   return null;
 }
